@@ -1,0 +1,174 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KubeCraft - Cloud-Native Infrastructure & Kubernetes Orchestration</title>
+        <link rel="stylesheet" href="landing.css">
+        <script src="landing_page.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container nav-container">
+                <a href="#home" class="logo">
+                    <i class="fa-solid fa-cubes-stacked"></i>KubeCraft
+                </a>
+                <button class="menu-toggle" id="menutoggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navmenu">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a href="#get-start" class="btn btn-primary open-modal"> Get Start </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="home" id="hero" style="margin: 100px;">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">
+                    <i class="fa-solid fa-bolt"></i> Next-Gen Orchestration Platform
+                </div>
+                    <h1 class="hero-title">
+                        Master Kubernetes Infrastructure with <span class="gradient-text">KubeCraft</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Automate deployments, optimize cloud costs, and scale microservices with a unified DevOps toolkit built for modern cloud-native teams.
+                    </p>
+                    <div class="hero-action">
+                        <a href="#get-start" class="btn btn-primary open-modal"> Get Start </a>
+                        <a href="#features" class="btn btn-secondary"> Features </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Built for Modern DevOps</h2>
+                    <p class="section-description">Everything you need to orchestrate and monitor containers at scale.</p>
+                </div>
+                <div class="grid-features">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="card-title">Auto-Scaling Engine</h3>
+                        <p class="card-text">Intelligently allocate compute resources dynamically based on real-time traffic and workloads.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                      </div>
+                      <h3 class="card-title">Zero-Trust Guard</h3>
+                      <p class="card-text">Built-in runtime security, automated vulnerability scans, and strict RBAC policy enforcement.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Deep Telemetry</h3>
+                        <p class="card-text">Real-time observability with integrated metrics, logs, and distributed tracing visualization.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-code-merge"></i>
+                        </div>
+                        <h3 class="card-title">GitOps Pipelines</h3>
+                        <p class="card-text">Seamlessly sync clusters with Git repositories for automated and continuous deployments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Eliminate Complexity in Multi-Cloud Clusters</h2>
+                        <p>KubeCraft abstracts the overhead of bare-metal and multi-cloud Kubernetes orchestration. Our unified control plane allows developers to focus on delivering software rather than managing configuration YAML files.</p>
+                        <p>Accelerate release velocity and secure your container pipeline without sacrificing control.</p>
+                        <div class="stat-list">
+                            <div class="stat-items">
+                                <h3>99.99%</h3>
+                                <p>Uptime SLA</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>10x</h3>
+                                <p>Faster Deploys</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>40%</h3>
+                                <p>Cost Reduction</p>
+                            </div>
+                            <div class="about-visual">
+                                <div class="terminal-header">
+                                    <div class="dot dot-red"></div>
+                                    <div class="dot dot-yellow"></div>
+                                    <div class="dot dot-green"></div>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="terminal-line"><span class="terminal-cmd">$</span> kubecraft init --cluster production-us</div>
+                                    <div class="terminal-line">[i] Connecting to Kubernetes control plane...</div>
+                                    <div class="terminal-line">[i] Applying zero-trust security policies...</div>
+                                    <div class="terminal-line">[i] Auto-scaler attached successfully.</div>
+                                    <div class="terminal-line"><span class="terminal-cmd">$</span> kubecraft status</div>
+                                    <div class="terminal-line" style="color: #38ef7d;">✔ Cluster status: HEALTHY (12/12 Nodes)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">Have questions about integrations or enterprise plans? Talk to us.</p>
+            </div>
+            <div class="contact-box">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Alex Mercer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Work Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="alex@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" placeholder="How can we help your team?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-text">
+                &copy; 2026 KubeCraft Inc. All rights reserved. Built for cloud engineers everywhere.
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+</html>
